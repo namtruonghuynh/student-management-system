@@ -18,10 +18,15 @@ Dự án Student Management System (Express + TypeScript + TypeORM) được thi
 
 ## Nguyên tắc Clean Code|Áp dụng cụ thể trong dự án|Lợi ích đạt được
 Meaningful Names| Tên lớp, hàm và biến phản ánh đúng chức năng: StudentController, createStudent(), deleteStudentById()| Dễ đọc, dễ hiểu, hạn chế nhầm lẫn khi mở rộng mã nguồn
+
 Small Functions| Mỗi hàm chỉ làm một nhiệm vụ duy nhất, ví dụ StudentService.createStudent() chỉ phụ trách thêm học sinh, không kiêm thêm validation hoặc logic phụ| Giảm rủi ro lỗi, dễ test và tái sử dụng
+
 Single Responsibility| Tách code thành 3 tầng: Controller (xử lý request/response), Service (chứa logic nghiệp vụ), Repository (truy cập cơ sở dữ liệu)| Cấu trúc rõ ràng, dễ bảo trì và dễ mở rộng
+
 Consistent Formatting| Dùng Prettier + ESLint + TypeScript strict mode để tự động định dạng và kiểm tra lỗi| Mã nguồn gọn gàng, thống nhất giữa các file
+
 Error Handling| Toàn bộ API đều bọc trong try...catch, trả về thông báo lỗi có cấu trúc rõ ràng qua res.status(...).json(...)| Tránh crash server, dễ debug khi vận hành
+
 Separation of Concerns| Từng module chỉ đảm nhận một chức năng (routing, controller, service, repository, database config)| Giảm coupling, dễ thêm tính năng mới mà không ảnh hưởng code cũ
 
 ## Áp dụng SOLID Principles
