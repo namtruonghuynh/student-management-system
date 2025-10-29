@@ -1,6 +1,6 @@
 # Student Management System (Express + TypeScript + TypeORM + MySQL)
 
-Hệ thống **quản lý học sinh** được phát triển bằng **TypeScript** với **Express.js** và **TypeORM**.  
+Hệ thống **quản lý học sinh** được phát triển bằng **TypeScript** với **Express.ts** và **TypeORM**.  
 Mục tiêu chính là vận dụng **Clean Code** và **SOLID principles** để xây dựng hệ thống có tính **mở rộng, dễ bảo trì, dễ kiểm thử**.
 
 ---
