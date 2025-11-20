@@ -12,5 +12,5 @@ export class Student {
   age!: number;
 
   @Column()
-  classNam!: string;
+  className!: string;
 }
