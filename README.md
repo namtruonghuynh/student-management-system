@@ -11,6 +11,7 @@ Mục tiêu chính là vận dụng **Clean Code** và **SOLID principles** đ�
 - Áp dụng toàn diện **Clean Code** và **SOLID**.
 - Cấu hình môi trường an toàn bằng `.env`.
 - Kết nối MySQL qua **TypeORM**.
+- Triển khai cơ chế Xác thực (Authentication) và Phân quyền (Authorization) bằng JSON Web Token (JWT) để bảo vệ các route quan trọng.
 
 ## Áp dụng Clean Code
 
@@ -59,3 +60,4 @@ D_Dependency Inversion Principle
 Module cấp cao không phụ thuộc trực tiếp vào module cấp thấp	
 StudentController chỉ phụ thuộc vào StudentService, và service được inject qua constructor. Không phụ thuộc trực tiếp vào database	
 Giảm coupling, dễ thay đổi service hoặc test mà không ảnh hưởng logic chính
+
